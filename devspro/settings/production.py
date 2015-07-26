@@ -13,7 +13,7 @@ EMAIL_BACKEND = ''
 # https://docs.djangoproject.com/en/1.7/ref/settings/#databases
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'ENGINE': 'django.db.backends.mysql',
         'NAME': get_env_variable('DJANGO_DATABASE_NAME'),
         'USER': get_env_variable('DJANGO_DATABASE_USER'),
         'PASSWORD': get_env_variable('DJANGO_DATABASE_PASSWORD'),
