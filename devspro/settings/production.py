@@ -3,10 +3,7 @@
 from .base import *  # NOQA @UnusedWildImport
 
 
-ALLOWED_HOSTS = []
-
-
-SECRET_KEY = get_env_variable('SECRET_KEY')
+ALLOWED_HOSTS = ['zatan.pythonanywhere.com']
 
 
 EMAIL_BACKEND = ''

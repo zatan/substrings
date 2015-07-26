@@ -3,15 +3,16 @@ $('.search-form button').click(function(e){
   e.preventDefault();
   input_value = $('#id_search').val();
 
-  $loader = $('.loader').show();
   $results = $('.results p');
+  $results.empty();
+  $loader = $('.loader').show();
 
   $.getJSON('', {'query': input_value}, function(data){
     $loader = $('.loader').hide();
     if (data.results){
-      $results.empty().append(data.results);
+      $results.append(data.results);
     } else {
-      $results.empty().append("No results.");
+      $results.append("No results.");
     }
   });
 
