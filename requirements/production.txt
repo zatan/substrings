@@ -1,0 +1,4 @@
+-r base.txt
+
+newrelic==2.40.0.34
+gunicorn==19.1.1

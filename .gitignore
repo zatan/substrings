@@ -1,0 +1,33 @@
+# Logging
+logs/
+
+
+# Docs
+docs/build
+
+
+# Python
+*.py[co]
+
+
+# Vim
+*.sw[pon]
+
+
+# Node modules
+node_modules
+
+#
+# Sass
+.sass-cache
+
+
+# Bower
+*/static/bower_components
+
+
+# Static
+/static/*
+
+# Temporary files
+tmp/*

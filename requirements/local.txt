@@ -1,0 +1,11 @@
+-r base.txt
+
+Fabric==1.10.0
+coverage==3.7.1
+ipdb==0.8
+ipython==2.3.1
+pep8==1.5.7
+pyflakes==0.8.1
+pylint==1.4.1
+django-extensions==1.5.1
+django-debug-toolbar==1.3.0

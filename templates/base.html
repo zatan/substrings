@@ -1,0 +1,42 @@
+{% load staticfiles %}
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>{{ site_settings.page_title }}</title>
+
+    <meta name="description" content="{{ site_settings.meta_description }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="google-site-verification"
+    content="{{ site_settings.google_site_verification_code }}" />
+
+    {% include "includes/stylesheets.html" %}
+
+    {% block extra_styles %}
+    {% endblock extra_styles %}
+
+  </head>
+
+  <body>
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <div class="container">
+      {% block content %}
+      {% endblock content %}
+    </div>
+
+    <footer>
+    </footer>
+
+    <!-- Add your site or application content here -->
+      {% include "includes/javascript.html" %}
+
+      {% block extra_js %}
+      {% endblock extra_js %}
+
+  </body>
+</html>

@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+  <div class="row">
+
+    <form class="search-form">
+      {% for field in form %}
+
+        <div class="form-group">
+          <div class="input-group">
+            {{ field }}
+            <div class="input-group-btn">
+              <button type="submit" class="btn btn-success">
+                <span class="glyphicon glyphicon-search"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </form>
+    <div class="results text-center">
+        <img src="{% static 'img/loaders/480.GIF' %}" class="loader"/>
+        <p></p>
+    </div>
+
+  </div>
+{% endblock content %}
+
