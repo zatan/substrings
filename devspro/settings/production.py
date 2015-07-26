@@ -18,7 +18,7 @@ DATABASES = {
         'USER': get_env_variable('DJANGO_DATABASE_USER'),
         'HOST': get_env_variable('DJANGO_DATABASE_HOST'),
         'PASSWORD': get_env_variable('DJANGO_DATABASE_PASSWORD'),
-        'PORT': '5432',
+        'PORT': '3306',
         'ATOMIC_REQUESTS': True
     },
 }
